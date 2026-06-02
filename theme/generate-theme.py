@@ -64,7 +64,14 @@ waybar = f"""@define-color bg {colors["bg"]};
 
 strip = lambda c: c.lstrip("#")
 
-foot = f"""[colors]
+foot = f"""
+[csd]
+border-width=10
+border-color={strip(colors["light_purple"])}
+[main]
+pad=8x8 center
+[colors-dark]
+
 background={strip(colors["bg"])}
 foreground={strip(colors["text_bright"])}
 

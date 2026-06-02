@@ -32,6 +32,9 @@ cachyos-hello.json
 user-dirs.dirs
 user-dirs.locale
 
+galculator/
+qalculate/
+
 # -----------------------------
 # important configs
 # -----------------------------

@@ -16,12 +16,6 @@ configuration {
     drun-display-format: "{name}";
 }
 
-
-
-configuration {
-    
-}
-
 window {
     width:            40%;
     location:         center;
@@ -34,7 +28,7 @@ window {
 }
 
 mainbox {
-    /* Thin inner white border */
+    /* Thin inner white border - KEPT ORIGINAL */
     background-color: @bright;
     padding:          2px;
     spacing:          0px;
@@ -60,6 +54,7 @@ prompt {
 
 entry {
     text-color: @fg;
+    background-color: @black;
 }
 
 listview {
@@ -75,13 +70,36 @@ listview {
     padding:          4px 8px 6px 4px;
 }
 
+textbox {
+    text-color:       @textspecial;  
+    background-color: transparent;
+    padding:          0px 8px;      
+}
+
+/* Force elements to always stay black, overriding Rofi's defaults */
+element normal.normal,
+element normal.urgent,
+element normal.active,
+element selected.normal,
+element selected.urgent,
+element selected.active,
+element alternate.normal,
+element alternate.urgent,
+element alternate.active {
+    background-color: @black;
+    text-color:       @fg;
+}
+
+
+
 element {
+    background-color: @black;
 
     orientation: horizontal;
     spacing:     8px;
 
     padding:     1px 8px;
-    margin: 0px 4px;
+    margin:      0px 4px;
 
     border:      0px;
     border-radius: 0px;
@@ -94,8 +112,8 @@ element-icon {
 
 element-text {
     background-color: transparent;
-    expand: true;
-      text-color:       @fg;
+    expand:           true;
+    text-color:       inherit;
 }
 
 element-text selected {
