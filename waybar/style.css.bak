@@ -1,0 +1,45 @@
+window#waybar {
+    background-color: #05030a;
+    border-bottom: 2px solid #e61f65;
+    color: #a0a0a0;
+    font-family: "Terminus", "Courier New", monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#modules-left, #modules-center, #modules-right {
+    background: transparent;
+}
+
+#workspaces button {
+    padding: 0 15px;
+    background: transparent;
+    color: #a0a0a0;
+    border-right: 1px solid #2d1a30;
+}
+
+#workspaces button.focused {
+    color: #ffffff;
+    background-color: #e61f65;
+}
+
+#workspaces button:hover {
+    background-color: #00dbff;
+    color: #05030a;
+}
+
+#custom-logo {
+    color: #e61f65;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+#clock {
+    color: #00dbff;
+    padding-right: 10px;
+}
+
+#cpu, #memory, #network {
+    padding: 0 10px;
+    border-left: 1px solid #2d1a30;
+}

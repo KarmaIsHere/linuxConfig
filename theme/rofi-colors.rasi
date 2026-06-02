@@ -1,0 +1,11 @@
+* {
+    bg:     #1f1a2d;
+    fg:     #a0a0a0;
+    popborder:   #284dff;
+    dark:   #161022;
+    light:  #2d2735;
+    bright: #ffffff;
+    textspecial: #00dbff;
+    select: #ff2bd6;
+    black: #000000;
+}

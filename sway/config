@@ -1,0 +1,15 @@
+# Read `man 5 sway` for a complete reference.
+
+
+include ~/.config/sway/config.d/variables.conf
+include ~/.config/sway/config.d/theme.conf
+include ~/.config/sway/config.d/workspaces.conf
+include ~/.config/sway/config.d/startup.conf
+include ~/.config/sway/config.d/windows.conf
+include ~/.config/sway/config.d/input.conf
+include ~/.config/sway/config.d/scratchpads.conf
+include ~/.config/sway/config.d/keybinds.conf
+include ~/.config/sway/config.d/media.conf
+include ~/.config/sway/config.d/bar.conf
+
+include /etc/sway/config.d/*

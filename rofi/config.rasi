@@ -1,0 +1,104 @@
+@import "/home/karma/.config/theme/rofi-colors.rasi"
+
+/* VA-11 HALL-A */
+
+* {
+    background-color: @black;
+    font:             "Terminus 12";
+}
+
+prompt {
+    text-color: @textspecial;
+}
+
+configuration {
+    show-icons: true;
+    drun-display-format: "{name}";
+}
+
+
+
+configuration {
+    
+}
+
+window {
+    width:            40%;
+    location:         center;
+
+    /* Outer blue border */
+    background-color: @popborder;
+    border:           0px;
+    border-radius:    0px;
+    padding:          4px;
+}
+
+mainbox {
+    /* Thin inner white border */
+    background-color: @bright;
+    padding:          2px;
+    spacing:          0px;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+
+    /* Black interior */
+    background-color: @black;
+
+    border:           0px;
+    padding:          6px 8px;
+    margin:           0px;
+
+    border-radius:    0px;
+}
+
+prompt {
+    text-color: @textspecial;
+    margin:     0px 6px 0px 0px;
+}
+
+entry {
+    text-color: @fg;
+}
+
+listview {
+    background-color: @black;
+
+    lines:            8;
+    spacing:          2px;
+    scrollbar:        true;
+
+    border:           0px;
+    border-radius:    0px;
+
+    padding:          4px 8px 6px 4px;
+}
+
+element {
+
+    orientation: horizontal;
+    spacing:     8px;
+
+    padding:     1px 8px;
+    margin: 0px 4px;
+
+    border:      0px;
+    border-radius: 0px;
+}
+
+element-icon {
+    size:             1.2em;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    expand: true;
+      text-color:       @fg;
+}
+
+element-text selected {
+    text-color: @bright;
+}
+

@@ -1,0 +1,13 @@
+{
+    "bg": "#1f1a2d",
+    "main_border": "#1f1a2d",
+    "dark_purple": "#161022",
+    "light_purple": "#2d2735",
+    "pop_border": "#284dff",
+    "inner_border": "#ffffff",
+    "text_special": "#00dbff",
+    "text_muted": "#a0a0a0",
+    "text_bright": "#ffffff",
+    "select": "#ff2bd6",
+    "black": "#000000"
+}

@@ -1,0 +1,10 @@
+window, entry, menu {
+       background-color: #05030a;
+       color: #a0a0a0;
+   }
+
+   /* Target selected text or hover items with your neon pink */
+   selection, entry:selected, menu item:hover {
+       background-color: #e61f65;
+       color: #ffffff;
+   }

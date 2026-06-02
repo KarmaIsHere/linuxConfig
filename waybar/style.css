@@ -1,0 +1,45 @@
+@import url("file:///home/karma/.config/theme/waybar-colors.css");
+
+window#waybar {
+    background-color: @bg;
+
+    border-bottom: 3px solid @main_border;
+    border-left: 3px solid @main_border;
+    border-right: 3px solid @main_border;
+
+    box-shadow:
+        inset 0px -1px 1px 1px @light_purple,
+        inset 0px 1px 1px 1px @dark_purple;
+
+    color: @text_bright;
+
+    font-family: "Noto Sans", "JetBrains Mono", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @light_purple;
+}
+
+#workspaces button.focused {
+    color: @text_special;
+    border-bottom: 3px solid @text_special;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#volume,
+#network,
+#pulseaudio,
+#custom-media,
+#tray {
+    padding: 0 10px;
+    color: @text_bright;
+    background-color: transparent;
+}
