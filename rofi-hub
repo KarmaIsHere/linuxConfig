@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Ensure the script can find your binaries
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
+
+# ---- NEW: AUTOSTART CHECK ----
+# If wl-paste isn't running, start the cliphist listeners in the background
+if ! pgrep -x "wl-paste" > /dev/null; then
+    wl-paste --type text --watch cliphist store -max-items 100 >/dev/null 2>&1 &
+    wl-paste --type image --watch cliphist store -max-items 100 >/dev/null 2>&1 &
+fi
+# ------------------------------
+
+choice=$(printf "Apps\nCalc\nFiles\nClipboard\nEmoji" | rofi -dmenu -p "Rofi Hub")
+
+case "$choice" in
+  Apps) 
+    rofi -show drun 
+    ;;
+  Calc) 
+    rofi -show calc -modi calc 
+    ;;
+  Files) 
+    rofi -show filebrowser 
+    ;;
+  Clipboard) 
+    selection=$(cliphist list | rofi -dmenu -p "Clipboard Copy")
+    if [ -n "$selection" ]; then
+        printf "%s" "$selection" | cliphist decode | wl-copy
+    fi
+    ;;
+  Emoji) 
+    rofimoji 
+    ;;
+esac
