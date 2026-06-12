@@ -5,9 +5,9 @@ exec_always python /usr/share/sway-contrib/inactive-windows-transparency.py
 exec_always python /usr/share/sway-contrib/layout-per-window.py
 
 include ~/.config/sway/config.d/variables.conf
+include ~/.config/sway/config.d/startup.conf
 include ~/.config/sway/config.d/theme.conf
 include ~/.config/sway/config.d/workspaces.conf
-include ~/.config/sway/config.d/startup.conf
 include ~/.config/sway/config.d/windows.conf
 include ~/.config/sway/config.d/input.conf
 include ~/.config/sway/config.d/scratchpads.conf
