@@ -14,8 +14,9 @@
         "all-outputs": true,
         "format": "{name}"
     },
+
     "clock": {
-        "format": " [{:%H:%M}] "
+        "format": " 󰥔 {:%Y-%m-%d %H:%M} "
     },
 
     "custom/bluetooth": {

@@ -150,7 +150,7 @@ def reflow_workspace(ws_name):
 # -----------------------------
 
 def on_window_new(sway, event):
-    threading.Timer(0.05, snap_window).start()
+    snap_window()
 
 def on_window_close(conn, event):
     win = event.container
