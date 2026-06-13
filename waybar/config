@@ -4,7 +4,7 @@
     "height": 34,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["custom/logo"],
-    "modules-right": ["network", "cpu", "memory", "clock"],
+    "modules-right": ["custom/bluetooth", "pulseaudio", "clock"],
     
     "custom/logo": {
         "format": "VA-11 HALL-A"
@@ -17,15 +17,22 @@
     "clock": {
         "format": " [{:%H:%M}] "
     },
-    "cpu": {
-        "format": "CPU:{usage}%"
+
+    "custom/bluetooth": {
+    "format": "",
+    "on-click": "blueman-manager"
     },
-    "memory": {
-        "format": "RAM:{percentage}%"
+    "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-muted": "󰖁",
+    "format-icons": {
+        "headphone": "",
+        "headset": "󰋎",
+        "default": ["󰕿", "󰖀", "󰕾"]
     },
-    "network": {
-        "format-wifi": "NET:{essid}",
-        "format-ethernet": "NET:ETH",
-        "format-disconnected": "NET:DISC"
-    }
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+}
 }
