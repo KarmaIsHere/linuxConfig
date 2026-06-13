@@ -8,3 +8,4 @@ window, entry, menu {
        background-color: #e61f65;
        color: #ffffff;
    }
+@import 'colors.css';

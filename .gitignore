@@ -86,7 +86,9 @@ user-dirs.locale
 vesktop/
 xed/
 xsettingsd/
-
+kmenueditrc
+pavucontrol.ini
+unity3d/
 
 # -----------------------------
 # important configs
